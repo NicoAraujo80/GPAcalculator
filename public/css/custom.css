@@ -1,0 +1,42 @@
+.pop-up {
+    z-index: 3;
+    width: 60vw;
+    height: 70vh;
+    background-color: lightcyan;
+    position: absolute;
+    top: 15vh;
+    left: 20vw;
+    border-radius: 2%;
+    overflow: scroll;
+}
+
+.custom-input {
+    outline: none;
+    font-family: Georgia;
+    text-align: center;
+    margin: auto;
+    display: block;
+    height: 1.1em;
+    font-size: 2em;
+    width: 90%;
+    border: 0px;
+    border-bottom: 1px black solid;
+    background-color: transparent;
+    margin-top: .2em
+}
+
+.pop-up-button {
+    margin: auto;
+    display: block;
+    width: 65%;
+}
+
+.pop-up-save {
+    margin: auto;
+    display: block;
+    width: 70%;
+}
+
+body {
+    background-color: #dae0e5
+}
