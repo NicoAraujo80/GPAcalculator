@@ -15,10 +15,11 @@ Route::get('/', 'pagesController@getIndex')->name('index')->middleware('checkCla
 
 Route::get('/ChooseClasses', 'pagesController@getChooseClasses')->name('chooseClasses');
 
-Route::get('/add', 'pagesController@addClass')->name('addClass');
+Route::get('/add', 'classesController@addClass')->name('addClass');
 
-Route::get('/remove', 'pagesController@removeClass')->name('removeClass');
+Route::get('/remove', 'classesController@removeClass')->name('removeClass');
 
-Route::post('/submit', 'pagesController@postClasses')->name('submit');
+Route::post('/submit', 'classesController@postClasses')->name('submit');
 
-Route::post('/calculateGrades', 'pagesController@calculateGrades')->name('calc');
+Route::post('/calculateGrades', 'gpaCalculationController@calculateGrades')->name('calc');
+

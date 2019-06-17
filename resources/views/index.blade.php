@@ -12,7 +12,7 @@
 <body>
     @include('partials._header')
 
-    @if (isset($classes))
+    @if (isset($grades))
         @include('partials._classes')
     @endif
 
