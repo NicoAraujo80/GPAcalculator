@@ -25,7 +25,7 @@ class classesController extends Controller
         array_push($currentNumClasses, sizeof($currentNumClasses));
         Session::put('classNum',$currentNumClasses);
 
-        return redirect()->route('index');
+        return redirect()->route('chooseClasses');
     }
 
     function removeClass()
@@ -34,6 +34,6 @@ class classesController extends Controller
         array_pop($currentNumClasses);
         Session::put('classNum', $currentNumClasses);
 
-        return redirect()->route('index');
+        return redirect()->route('chooseClasses');
     }
 }

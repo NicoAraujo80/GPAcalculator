@@ -5,7 +5,7 @@
             @foreach ($classNum as $class)
                 <div class="row" style="margin: 3em;">
                     <div class="col-4">
-                        <input value="{{ isset($classes) ? $classes[$class]['name'] : "" }}" placeholder="Class Name" type="text" id="className{{ $class }}" name="className{{ $class }}" class="custom-input">
+                        <input value="{{ isset($classes) ? isset($classes[$class]['name']) ? $classes[$class]['name'] : "" : "" }}" placeholder="Class Name" type="text" id="className{{ $class }}" name="className{{ $class }}" class="custom-input">
                     </div>
 
                     <div class="col-6 offset-1">
@@ -13,14 +13,14 @@
                             <div class="col-6 form-group">
                                 <select id="classType{{ $class }}" name="classType{{ $class }}" class="custom-select">
                                     @foreach ($classTypes as $classType)
-                                        <option {{ isset($classes) ? $classes[$class]['type'] == $classType ? "selected" : "" : "" }}>{{$classType}}</option>
+                                        <option {{ isset($classes) ? isset($classes[$class]['type']) ? $classes[$class]['type'] == $classType ? "selected" : "" : "" : "" }}>{{$classType}}</option>
                                     @endforeach
                                 </select>
                             </div>
                             <div class="col-6 form-group">
                                 <select id="classLength{{ $class }}" name="classLength{{ $class }}" class="custom-select">
                                     @foreach ($classLengths as $classLength)
-                                        <option {{ isset($classes) ? $classes[$class]['length'] == $classLength ? "selected" : "" : "" }}>{{$classLength}}</option>
+                                        <option {{ isset($classes) ? isset($classes[$class]['length']) ? $classes[$class]['length'] == $classLength ? "selected" : "" : "" : "" }}>{{$classLength}}</option>
                                     @endforeach
                                 </select>
                             </div>
