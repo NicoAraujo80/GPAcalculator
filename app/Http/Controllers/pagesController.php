@@ -6,7 +6,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 
 class pagesController extends Controller
-{
+{   
+    //Retrives index view 
     function getIndex() {
         $grades = ['A+', 'A', 'A-', 'B+', 'B', 'B-', 'C+', 'C', 'C-', 'D+', 'D', 'D-', 'F'];
         $classes = Session::get('classes');
@@ -16,6 +17,7 @@ class pagesController extends Controller
         return view('index')->withClasses($classes)->withGrades($grades)->withCurrentGrades($currentGrades)->withGpa($gpa);
     }
 
+    
     function getChooseClasses()
     {
         $classNum = Session::get('classNum', [0, 1, 2, 3, 4]);
