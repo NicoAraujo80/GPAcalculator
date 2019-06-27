@@ -1,0 +1,15 @@
+body {
+    font-size: 100%;
+}
+
+@media screen and (min-width: 700px) {
+    body {
+        font-size: 150%;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    body {
+        font-size: 200%;
+    }
+}

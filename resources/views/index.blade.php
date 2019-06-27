@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="{{ URL::asset('css/app.css') }}"/>
     <link rel="stylesheet" href="{{ URL::asset('css/custom.css') }}"/>
+    <link rel="stylesheet" href="{{ URL::asset('css/responsive.css') }}"/>
 </head>
 <body>
     @include('partials._header')
