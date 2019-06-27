@@ -1,12 +1,12 @@
 <form action="{{ route('calc') }}" method="post">
 {{ csrf_field() }}
     @foreach ($classes as $class)
-        <div class="row" style="margin: 2em;">
+        <div class="row" style="margin: 1em;">
             <div class="col-xl-2 offset-xl-4 col-lg-3 offset-lg-3 col-6">
-                <h1 style="text-align: center; font-size: 2.5em;">{{$class['name']}}</h1>
+                <h1 style="text-align: center; font-size: 1.2em;">{{$class['name']}}</h1>
             </div>
             <div class="col-lg-2 col-4">
-                <select id="grade{{$loop->index}}" name="grade{{$loop->index}}" class="form-control">
+                <select id="grade{{$loop->index}}" name="grade{{$loop->index}}" class="form-control custom-select">
                     @foreach($grades as $grade)
                             <option style="text-align: center;" {{ isset($currentGrades) ? $grade == $currentGrades[$loop->parent->index] ? "selected" : "" : "" }}>{{$grade}}</option>
                     @endforeach

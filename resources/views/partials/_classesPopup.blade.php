@@ -11,14 +11,14 @@
 
                     <div class="col-xl-6 col-lg-5 offset-1 col-6">
                         <div class="row">
-                            <div class="col-6 form-group">
+                            <div class="col-6 form-group" style="padding-left: 0;">
                                 <select id="classType{{ $class }}" name="classType{{ $class }}" class="custom-select">
                                     @foreach ($classTypes as $classType)
                                         <option {{ isset($classes) ? isset($classes[$class]['type']) ? $classes[$class]['type'] == $classType ? "selected" : "" : "" : "" }}>{{$classType}}</option>
                                     @endforeach
                                 </select>
                             </div>
-                            <div class="col-6 form-group">
+                            <div class="col-6 form-group" style="padding-left: 0;">
                                 <select id="classLength{{ $class }}" name="classLength{{ $class }}" class="custom-select">
                                     @foreach ($classLengths as $classLength)
                                         <option {{ isset($classes) ? isset($classes[$class]['length']) ? $classes[$class]['length'] == $classLength ? "selected" : "" : "" : "" }}>{{$classLength}}</option>
