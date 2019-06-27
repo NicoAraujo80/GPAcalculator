@@ -34,13 +34,13 @@
 }
 
 .custom-select {
+    height: 2.5em;
     display: block;
     font-size: .5em;
     font-family: sans-serif;
     font-weight: 400;
     color: #444;
     line-height: 1;
-    height: 2.5em !important;
     padding: .6em 1.4em .5em .8em;
     width: 100%;
     max-width: 100%; 
