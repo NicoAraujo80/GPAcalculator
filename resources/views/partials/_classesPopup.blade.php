@@ -1,6 +1,7 @@
 <form action="{{ route('submit') }}" method="post">
     {{ csrf_field() }}
     <div class="pop-up col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-12">
+        <h1 style="text-align: center; font-size: 2em; margin-top: 1em; color: #494949; font-family: Trebuchet;">Choose Classes</h1>
         <div>
             @foreach ($classNum as $class)
                 <div class="row" style="margin: 3em;">

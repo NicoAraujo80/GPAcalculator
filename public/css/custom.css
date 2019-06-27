@@ -8,14 +8,14 @@
 }
 
 .pop-up > div {
-    height: 90%;
+    height: 80%;
     overflow-y: scroll;
     overflow-x: hidden;
 }
 
 .custom-input {
     outline: none;
-    font-family: Georgia;
+    font-family: Trebuchet;
     text-align: center;
     margin: auto;
     display: block;
