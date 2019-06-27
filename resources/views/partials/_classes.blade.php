@@ -6,7 +6,7 @@
                 <h1 style="text-align: center; font-size: 1.2em;">{{$class['name']}}</h1>
             </div>
             <div class="col-lg-2 col-4">
-                <select id="grade{{$loop->index}}" name="grade{{$loop->index}}" class="form-control custom-select">
+                <select style="height: 2.5em;" id="grade{{$loop->index}}" name="grade{{$loop->index}}" class="form-control custom-select">
                     @foreach($grades as $grade)
                             <option style="text-align: center;" {{ isset($currentGrades) ? $grade == $currentGrades[$loop->parent->index] ? "selected" : "" : "" }}>{{$grade}}</option>
                     @endforeach
