@@ -6,7 +6,7 @@
             @foreach ($classNum as $class)
                 <div class="row" style="margin: 1.5em;">
                     <div class="col-xl-3 col-lg-4 offset-lg-1 col-5">
-                        <input value="{{ isset($classes) ? isset($classes[$class]['name']) ? $classes[$class]['name'] : "" : "" }}" placeholder="Class Name" type="text" id="className{{ $class }}" name="className{{ $class }}" class="custom-input">
+                        <input value="{{ isset($classes) ? isset($classes[$class]['name']) ? $classes[$class]['name'] : "" : "" }}" placeholder="Class Name" type="text" id="className{{ $class }}" required name="className{{ $class }}" class="custom-input">
                     </div>
 
                     <div class="col-xl-6 col-lg-5 offset-1 col-6">
